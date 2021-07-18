@@ -215,7 +215,7 @@ def deploy_voterProxy(proxyAdmin, dev, dualGovernance, governance, strategist, k
         [8000],
     ]
 
-    voterproxy_logic = MStableVoterProxy.at()
+    voterproxy_logic = MStableVoterProxy.deploy({"from": dev})
     time.sleep(sleep_between_tx)
 
     # Verify Contract
